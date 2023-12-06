@@ -1,0 +1,16 @@
+#### I have not prepared a deployment file, so I have written steps to run the code.
+1. Unzip the file
+2. Activate the virtual environment, python3 -m venv .venv from the terminal
+3. Run the flask app, flask run
+4. Make a api call on the flask server appending it with /api/v1/subfeddits/
+
+#### User can modify his queries using 5 parameters:
+1. subfeddit_id: default is all, enter +ve integer
+2. limit: default it all, enter +ve integer
+3. sort: defaullt is desc, enter asc or desc
+4. start_date: default is min date available, format is dd/mm/yyyy
+5. end_date: default is max date available, format is dd/mm/yyyy
+
+#### I have not used database to save data but only csv files. But this structure can be easliy switched to the database.
+#### I have tried to handle corner case for the paramters and tried to provide the issue to the user if entered incorrectly.
+#### I have used all the latest python libraries using 3.12 version.
